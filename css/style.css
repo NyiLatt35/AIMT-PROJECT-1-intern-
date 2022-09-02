@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --bg-blue: #02019b;
+    --txt-black: #000;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: all 0.5s;
+    font-family: 'Montserrat', 'Poppins', sans-serif;
+}
+.bg-blue{
+    background: var(--bg-blue);
+}
+.text-blue{
+    color: var(--bg-blue);
+}
+.home ul li a{
+    color: var(--txt-black);
+    font-weight: 600;
+}
+.home ul li a.active,
+.home ul li a:hover{
+    color: var(--bg-blue);
+}
+.carousel-indicators [data-bs-target].active{
+    width: 12px !important;
+    height: 12px !important;
+    background-color: var(--bg-blue) !important;
+}
+.carousel-indicators [data-bs-target]{
+    width: 10px !important;
+    height: 10px !important;
+    border: 2px solid #fff !important;
+    border-radius: 50% !important;
+    background-color: transparent;
+}
+.font-texts{
+    width: 80%;
+    font-size: 15px;
+}
+.bg-image{
+    height: 400px;
+    background: url('../assets/others/ourteam-bg.jpg') no-repeat ;
+    background-size: cover;
+}
+.titles{
+    letter-spacing: -1px;
+    word-spacing: 4px;
+}
+.text-banners{
+    width: 85%;
+}
+.footer{
+    cursor: pointer;
+}
+.carousel-item{
+    position: relative;
+}
+.carousel-item .carousel-caption{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-25%);
+}
+
+/* About Bg */
+.about-bg{
+    background: url("../assets/sliders/slider-1.png");
+}
+.text-shadow{
+    text-shadow: 1px 1px 1px #000;
+}
+.about-text h3{
+    position: relative;
+}
+.aboutus{
+    margin: 100px auto;
+}
+.about-text h3::after{
+    content: '';
+    width: 15%;
+    height: 5px;
+    background-color: var(--bg-blue);
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+}
+.about-font-size{
+    font-size: 15px;
+}
